@@ -1,11 +1,13 @@
 package com.example.coolweather.db;
 
-public class County {
+import org.litepal.crud.LitePalSupport;
+
+public class County extends LitePalSupport {
     private int id;
 
     private String countyName;
 
-    private int weatherID;
+    private String weatherID;
 
     private int cityID;
 
@@ -25,11 +27,11 @@ public class County {
         this.countyName = countyName;
     }
 
-    public int getWeatherID() {
+    public String getWeatherID() {
         return weatherID;
     }
 
-    public void setWeatherID(int weatherID) {
+    public void setWeatherID(String weatherID) {
         this.weatherID = weatherID;
     }
 
